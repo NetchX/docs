@@ -1,6 +1,6 @@
 # 常见问题
 ## 开启 TUN/TAP 模式后 CPU 占用高
-![](resources/screenshots/FAQ/Q1.png)
+![](resources/screenshots/faq/tuntap-high-cpu-usage.png)
 
 这是因为 Netch 批量向路由表写入路由规则的原因，过一会就好了
 
@@ -8,7 +8,7 @@
 换节点
 
 ## 网页代理模式启动失败
-![](resources/screenshots/FAQ/Q3.png)
+![](resources/screenshots/faq/web-proxy-mode-failed-to-start.png)
 
 1. 一般都是依赖没装导致的
 2. 检查是否被杀软拦截
@@ -24,4 +24,4 @@ https://kiritox.me/archives/setup-proxy-for-windows-apps.html
 
 ## 其他
 
-![](resources/screenshots/FAQ/QN.png)
+![](resources/screenshots/faq/Google.png)
