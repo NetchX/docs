@@ -56,6 +56,12 @@ STUN服务器（端口默认3478）：
 `NAT4 → Symmetric NAT` 最差
 
 
+## V2ray使用TUN/TAP模式DNS查询（打开网页）非常非常非常慢
+
+解决方案：在设置中使用自定义DNS默认`1.1.1.1` 
+
+![](resources/screenshots/faq/v2rayTunTap.png)
+
 ## 其他
 
 ![](resources/screenshots/faq/Google.png)
