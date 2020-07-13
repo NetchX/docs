@@ -77,6 +77,13 @@ STUN 服务器（端口默认 3478）：
 - [TAP-Windows](https://build.openvpn.net/downloads/releases/tap-windows-9.21.2.exe)
 - [依赖打包下载](https://mega.nz/file/9OQ1EazJ#0pjJ3xt57AVLr29vYEEv15GSACtXVQOGlEOPpi_2Ico)
 
+## TUN/TAP启动失败
+
+仅用于解决tun2socks日志中有CryptAcquireContext failed with error -2146893809 错误的问题
+
+解决方案：win+R输入 `%appdata%\Microsoft\Crypto` 打开后移动RSA文件夹至C盘根目录备份以防万一，然后再重启Netch，RSA文件夹在启动成功后会自动重新创建
+
+
 ## 其他
 
 ![](resources/screenshots/faq/Google.png)
