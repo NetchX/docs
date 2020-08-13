@@ -42,8 +42,8 @@ STUN 服务器（端口默认 3478）：
 
 - stun.miwifi.com
 - stun.bige0.com
-- stun.syncthing.net
-- stun.stunprotocol.org Netch 默认
+- stun.syncthing.net <- Netch 默认
+- stun.stunprotocol.org
 - iphone-stun.strato-iphone.de
 - stun.voipstunt.com
 - stun.xten.com
