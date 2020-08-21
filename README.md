@@ -13,3 +13,13 @@ Netch 是一款 Windows 平台的开源游戏加速工具，Netch 可以实现�
 - [Visual C++ 运行库合集](https://www.google.com/search?q=Visual+C%2B%2B+%E8%BF%90%E8%A1%8C%E5%BA%93%E5%90%88%E9%9B%86)
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-offline-installer)
 - [TAP-Windows](https://build.openvpn.net/downloads/releases/tap-windows-9.21.2.exe)
+
+## 捐赠
+- XMR *48ju3ELNZEa6wwPBMexCJ9G218BGY2XwhH6B6bmkFuJ3QgM4hPw2Pra35jPtuBZSc7SLNWeBpiWJZWjQeMAiLnTx2tH2Efx*
+
+## 赞助商
+- [RabbitHosts](https://rabbithosts.com/cart.php)
+- [ManSora](https://www.mansora.co/cart.php)
+- [ExCloud](https://excloud.net/cart.php)
+- [NyanCat](https://nyancat.info/register)
+- [YoYu](https://home.yoyu.ltd/cart.php)
