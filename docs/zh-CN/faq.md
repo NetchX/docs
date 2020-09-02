@@ -83,6 +83,12 @@ STUN 服务器（端口默认 3478）：
 
 解决方案：win+R输入 `%appdata%\Microsoft\Crypto` 打开后移动RSA文件夹至C盘根目录备份以防万一，然后再重启Netch，RSA文件夹在启动成功后会自动重新创建
 
+## Minecraft (Java) 模式启动后游戏载入地图卡在100%
+
+应为Netch暂不支持IPv6所以会出现卡登陆导致游戏无响应的情况
+
+解决方案：MinecraftLauncher ->版本配置->JVM参数 后面加上`-Djava.net.preferIPv4Stack=true`强制使用IPV4
+
 
 ## 其他
 
