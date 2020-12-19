@@ -1,10 +1,8 @@
 # 快速开始
 [下载地址](https://github.com/NetchX/Netch/releases)
 
-## 依赖（这个真的很重要）
-- [Visual C++ 运行库合集](https://www.google.com/search?q=Visual+C%2B%2B+%E8%BF%90%E8%A1%8C%E5%BA%93%E5%90%88%E9%9B%86)
-- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-offline-installer)
-- [TAP-Windows](https://build.openvpn.net/downloads/releases/tap-windows-9.21.2.exe)
+## 依赖
+- [.NET Framework 4.8 (Windows 10 1903+ 已包含)](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-offline-installer)
 
 ## 主界面
 ![](resources/screenshots/main.png)

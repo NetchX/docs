@@ -68,15 +68,6 @@ STUN 服务器（端口默认 3478）：
 
 ![](resources/screenshots/faq/v2rayTunTap.png)
 
-## 启动失败/卡在设置绕行规则
-
-装依赖！！！！
-
-- [Visual C++ 运行库合集](https://www.google.com/search?q=Visual+C%2B%2B+%E8%BF%90%E8%A1%8C%E5%BA%93%E5%90%88%E9%9B%86)
-- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-offline-installer)
-- [TAP-Windows](https://build.openvpn.net/downloads/releases/tap-windows-9.21.2.exe)
-- [依赖打包下载](https://mega.nz/file/9OQ1EazJ#0pjJ3xt57AVLr29vYEEv15GSACtXVQOGlEOPpi_2Ico)
-
 ## TUN/TAP启动失败
 
 仅用于解决tun2socks日志中有CryptAcquireContext failed with error -2146893809 错误的问题
