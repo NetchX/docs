@@ -80,6 +80,9 @@ STUN 服务器（端口默认 3478）：
 
 解决方案：MinecraftLauncher ->版本配置->JVM参数 后面加上`-Djava.net.preferIPv4Stack=true`强制使用IPV4
 
+## Netch更新下载慢/失败
+
+请尝试启用Netch的`网页代理`后再更新。
 
 ## 其他
 
