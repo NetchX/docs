@@ -24,11 +24,10 @@ Rules
 
 > `BypassChina`: int
 
-!> 此选项在 TUN/TAP 模式不生效
-
 加密代理客户端应用路由规则, 默认为 0
+可选，在 TUN/TAP 模式无作用
 
-网页代理模式依靠此选项分流
+网页代理模式依靠此选项启用绕过大陆
 
 * `0`: 禁用
 * `1`: 启用
@@ -37,15 +36,18 @@ Shadowsocks, ShadowsocksR 通过 ACL 路由
 
 VMess, VLESS 通过 routing 配置路由
 
-Trojan C++ 无路由支持
+Trojan C++ 无路由支持，使用 PAC 脚本路由
 
 > `Rules`: string
+
+##### 模式引用，注释
+
+见示例，模式可引用 **同类型的** 模式，**引用其他模式的模式不可被引用**
 
 ```
 # Discord (with Steam Apps), 0
 Discord
 // 注释
-// 引用 同类型 模式, 但是包含引用的模式不可被引用
 #include Steam.txt 
 ```
 
@@ -55,7 +57,7 @@ Discord
 
 以 **!** 开头的规则为跳过规则, 其余为代理规则
 
-**规则需符合 C++ 正则表达式语法**
+规则需符合 C++ 正则表达式语法
 
 程序的完整路径 如果匹配跳过规则, 则不被代理
 
