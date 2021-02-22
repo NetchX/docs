@@ -42,6 +42,8 @@ Trojan C++ 无路由支持
 > `Rules`: string
 
 ```
+# Discord (with Steam Apps), 0
+Discord
 // 注释
 // 引用 同类型 模式, 但是包含引用的模式不可被引用
 #include Steam.txt 
