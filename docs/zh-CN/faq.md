@@ -34,25 +34,19 @@ https://kiritox.me/archives/setup-proxy-for-windows-apps.html
 
 [NAT 类型概述以及提升 NAT 类型的方法](https://www.jianshu.com/p/478a4acc9d74)
 
-如出现`UdpBlock`说明服务器不支持 UDP 转发即不支持游戏加速(在此也不建议使用 V2ray 进行游戏加速)，如果确定节点 UDP 没问题但是 NAT 测试依旧显示为`UdpBlock`时建议在设置界面更换 STUN 服务器。
+!> NAT 开放程度会影响到以 GTAOL 为代表的 P2P 连接游戏匹配玩家的数量 和 种子下载寻找其他 peer 的效果
+
+!> NAT 测试结果只能代表 UDP 转发效果，大部分在线竞技游戏使用 UDP 协议传输游戏数据。NAT 测试结果不能代表网页浏览等 TCP 协议使用场景的使用效果
+
+如出现 `UdpBlocked` 可能是因为
+
+- 无法与服务器建立连接，这可能是因为 Netch 生成客户端配置错误或其他故障
+- 服务器不支持 UDP 转发，请检查服务端配置
+- 服务器无法建立与 STUN 服务器的连接，请在 Netch 设置内切换 STUN 服务器
 
 [NatTypeTester.exe](https://github.com/HMBSbige/NatTypeTester)
 
-STUN 服务器（端口默认 3478）：
-
-- stun.miwifi.com
-- stun.bige0.com
-- stun.syncthing.net <- Netch 默认
-- stun.stunprotocol.org
-- iphone-stun.strato-iphone.de
-- stun.voipstunt.com
-- stun.xten.com
-- stun.schlund.de
-- numb.viagenie.ca
-- stun.ekiga.net
-- stun.sipgate.net
-
-4 种 NAT 类型：
+NAT 测试结果：
 
 `NAT1 → Full Cone NAT` 此类型可获得最佳游戏体验
 
@@ -60,7 +54,7 @@ STUN 服务器（端口默认 3478）：
 
 `NAT3 → Port-Restricted Cone NAT`
 
-`NAT4 → Symmetric NAT` 最差
+`NAT4 → Symmetric NAT`
 
 ## V2ray 使用 TUN/TAP 模式 DNS 查询（打开网页）非常非常非常慢
 
@@ -68,7 +62,7 @@ STUN 服务器（端口默认 3478）：
 
 ![](resources/screenshots/faq/v2rayTunTap.png)
 
-## TUN/TAP启动失败
+## TUN/TAP 启动失败
 
 仅用于解决tun2socks日志中有CryptAcquireContext failed with error -2146893809 错误的问题
 
@@ -80,9 +74,9 @@ STUN 服务器（端口默认 3478）：
 
 解决方案：MinecraftLauncher ->版本配置->JVM参数 后面加上`-Djava.net.preferIPv4Stack=true`强制使用IPV4
 
-## Netch更新下载慢/失败
+## Netch 更新下载慢/失败
 
-请尝试启用Netch的`网页代理`后再更新。
+请启用 Netch 的`网页代理`后再更新。
 
 ## 其他
 
