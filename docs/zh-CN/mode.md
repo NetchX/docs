@@ -33,6 +33,7 @@ Rules
 * `3`: 网页代理
 * `4`: 本地 Socks5 代理
 * `5`: 本地 Socks5 和 HTTP 代理
+* `6`: pcap2socks
 
 ### `BypassChina`: int
 
@@ -95,6 +96,11 @@ TUN/TAP 规则为 [IPv4 CIDR 块](https://zh.wikipedia.org/wiki/%E6%97%A0%E7%B1%
 ```
 
 [提取加速器规则](https://github.com/FQrabbit/SSTap-Rule/blob/master/doc/UU-extract.md)
+
+#### pcap2socks 模式
+
+首行非注释规则会追加到 pcap2socks 启动参数结尾，无需 --interface 参数
+[pcap2socks 使用说明](https://github.com/zhxie/pcap2socks/blob/master/README.md#usage)
 
 #### 其他模式
 
