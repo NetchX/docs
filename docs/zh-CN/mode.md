@@ -50,7 +50,7 @@ Shadowsocks, ShadowsocksR 通过 ACL 路由
 
 VMess, VLESS 通过 routing 配置路由
 
-Trojan C++ 无路由支持，使用 PAC 脚本路由
+Socks5, Trojan 使用 PAC 脚本路由
 
 ### `Rules`: string
 
