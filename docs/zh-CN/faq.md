@@ -1,10 +1,10 @@
 # 常见问题
 
-## 更新 v2rayN 格式订阅报错
+## 更新服务器/导入 v2rayN 格式分享链接报错
 
-Netch 1.8.0 将 JSON 库迁移到了 System.Text.Json，并依据 [v2rayN 分享链接格式](https://github.com/2dust/v2rayN/wiki/%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E(ver-2)) 规范化导入分享连接。
+Netch 1.8.0 将 JSON 库迁移到了 System.Text.Json，并依据 [v2rayN 分享链接格式](https://github.com/2dust/v2rayN/wiki/%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E(ver-2)) 标准化导入分享连接。
 
-但是被大量使用的 SSPanel-Uim 因为 v2rayN 使用的 Newtonsoft.Json 库允许将 Number 反序列化为字符串，所以未注意规范，[现已规范化](https://github.com/Anankke/SSPanel-Uim/commit/4ccec3c9132c4cba498ce588653aa44302efe55c)，请寻找相关人员提醒更新面板。
+但是被大量使用的 SSPanel-Uim 因为 v2rayN 使用的 Newtonsoft.Json 库允许将 Number 反序列化为字符串（这是不标准的），所以未注意规范。[现已标准](https://github.com/Anankke/SSPanel-Uim/commit/4ccec3c9132c4cba498ce588653aa44302efe55c)，请寻找相关人员提醒更新面板。
 
 ## 开启 TUN/TAP 模式后 Windows 服务 CPU 利用率高
 
@@ -12,7 +12,7 @@ TUN/TAP 模式启动时 Netch 向路由表写入路由规则，规则条目越�
 
 SSTap 和 商业加速器虚拟网卡模式 都能观察到此问题
 
-原因未知，建议少使用具有大量数量的规则。
+原因未知，建议少使用具有大量条目的规则。
 
 ## DNS(53) 端口被占用
 
