@@ -3,3 +3,4 @@
   - [快速开始](docs/zh-CN/quickstart.md)
   - [模式介绍](docs/zh-CN/mode.md)
   - [常见问题](docs/zh-CN/faq.md)
+  - [使用技巧](docs/zh-CN/tips.md)
