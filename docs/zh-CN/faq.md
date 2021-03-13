@@ -1,17 +1,27 @@
 # 常见问题
 
-## 开启 TUN/TAP 模式后 CPU 占用高
+## 更新 v2rayN 格式订阅报错
 
-![](resources/screenshots/faq/tuntap-high-cpu-usage.png)
+Netch 1.8.0 将 JSON 库迁移到了 System.Text.Json，并依据 [v2rayN 分享链接格式](https://github.com/2dust/v2rayN/wiki/%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E(ver-2)) 规范化导入分享连接。
 
-这是因为 Netch 批量向路由表写入路由规则的原因，过一会就好了
+但是被大量使用的 SSPanel-Uim 因为 v2rayN 使用的 Newtonsoft.Json 库允许将 Number 反序列化为字符串，所以未注意规范，[现已规范化](https://github.com/Anankke/SSPanel-Uim/commit/4ccec3c9132c4cba498ce588653aa44302efe55c)，请寻找相关人员提醒更新面板。
+
+## 开启 TUN/TAP 模式后 Windows 服务 CPU 利用率高
+
+TUN/TAP 模式启动时 Netch 向路由表写入路由规则，规则条目越多利用率越高，并且会向日志文件写入内容 [*](https://github.com/NetchX/Netch/issues/320)
+
+SSTap 和 商业加速器虚拟网卡模式 都能观察到此问题
+
+原因未知，建议少使用具有大量数量的规则。
 
 ## DNS(53) 端口被占用
 
-在 设置-TUNTAP 中启用使用自定义 DNS （默认`1.1.1.1`）
+- [停用 Hyper-V](https://developer.android.com/studio/run/emulator-acceleration#disable-hyper-v)
+
+- 启用`设置-TUNTAP-使用自定义 DNS`（默认`1.1.1.1`）
 
 ## 网页代理模式 UWP 应用无法联网
-https://github.com/Fndroid/clash_for_windows_pkg/wiki/UWP%E5%BA%94%E7%94%A8%E8%81%94%E7%BD%91#%E4%B8%BA%E4%BB%80%E4%B9%88cfw%E4%B8%8Buwp%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91
+[Clash For Windows Wiki - UWP 应用联网](https://github.com/Fndroid/clash_for_windows_pkg/wiki/UWP%E5%BA%94%E7%94%A8%E8%81%94%E7%BD%91#%E4%B8%BA%E4%BB%80%E4%B9%88cfw%E4%B8%8Buwp%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91)
 
 [enableloopbackutility.exe](https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/enableloopbackutility.exe)
 
@@ -43,14 +53,10 @@ NAT 测试结果 [*](https://github.com/NetchX/Netch/issues/504#issuecomment-766
 
 `NAT4 → Symmetric NAT`
 
-## TUN/TAP 启动失败，日志中有 CryptAcquireContext failed with error -2146893809
-
-Win+R 输入 `%appdata%\Microsoft\Crypto` 后重命名 RSA 文件夹为 RSA_ 或直接删除。
-
 ## Netch 更新下载慢/失败
 
 请启用 Netch 的`网页代理`后再更新。
 
-## 其他
+## TUN/TAP 启动失败，日志中有 CryptAcquireContext failed with error -2146893809
 
-![](resources/screenshots/faq/Google.png)
+Win+R 输入 `%appdata%\Microsoft\Crypto` 后重命名 RSA 文件夹为 RSA_ 或直接删除。
